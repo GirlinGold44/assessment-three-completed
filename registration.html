@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+	<script src="register.js"></script>
+</head>
+<body>
+     <header>
+        <h1>Register</h1>
+        <nav>
+            <ul>
+						    <li><a href="home.html">About us</a></li>
+
+                <li><a href="index.html">Our Services</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="order.html">Order Now</a></li>
+				<li><a href="features.html">Features</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="POST"> 
+<body>
+		<fieldset>
+			<legend>Account Information</legend>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="textinput">
+					<label for="sid">User ID</label>
+					<input id="sid" type="text" name="id" />
+				</div>
+				<div class="textinput">
+					<label for="pwd1">Password</label>
+					<input id="pwd1" type="password" name="pwd1" />
+				</div>
+				<div class="textinput">
+					<label for="pwd2">Retype Password</label>
+					<input id="pwd2" type="password" name="pwd2" />
+				</div>
+		</fieldset>
+		<fieldset>
+			<legend>User Information</legend>
+				<div class="textinput">
+					<label for="uname">Name</label>
+					<input id="uname" type="text" name="uname" />
+				</div>
+				<div class="radioinput">
+					<legend>Gender</legend>
+						<label for="genm">Male</label>
+						<input id="genm" type="radio" name="gender" value="M" />
+						<label for="genf">Female</label>			
+						<input id="genf" type="radio" name="gender" value="F" />
+				<div>
+		
+                <label for="favorite-coffee">Favorite Coffee:</label>
+                <select id="favorite-coffee" name="favorite-coffee">
+                    <option value="espresso">Espresso</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                    <option value="mocha">Mocha</option>
+                </select>
+		</fieldset>
+				</div>
+				   <div>
+					<label>
+                    <input type="checkbox" name="newsletter" value="subscribe"> Subscribe to newsletter
+					</label>
+				</div>
+				<div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dreamy Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

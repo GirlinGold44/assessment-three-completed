@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japandi Cafe</title>
+    <link rel="stylesheet" href="styles.css"> 
+	</head>
+<body>
+    <header>
+        <h1>Order Now</h1>
+        <nav>
+            <ul>
+						    <li><a href="home.html">About us</a></li>
+
+                <li><a href="index.html">Our Services</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="order.html">Order Now</a></li>
+				<li><a href="features.html">Features</a></li>
+			</ul>
+		</nav>	
+	</header>
+
+</head>
+<body>
+           
+    <main>
+    	<section>
+	<h1>Place Your Order</h1>
+        <form action="http://mercury.swin.
+edu.au/it000000/cos1
+0005/regtest.php" method="POST"> 
+            <div>
+                <label>Order Type:</label>
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="delivery" name="order-type" value="delivery" onclick="toggleDeliveryAddress()" required>
+
+                <label for="pickup">Pickup</label>
+				<input type="radio" id="pickup" name="order-type" value="pickup" onclick="toggleDeliveryAddress()" required>
+            </div>
+
+    <!-- Delivery Address Fields -->
+	
+	    <h2>Delivery Address</h2>
+    <form>
+        <label for="delivery-name">Name:</label>
+        <input type="text" id="delivery-name" name="delivery-name"><br><br>
+        
+        <label for="delivery-address">Address:</label>
+        <input type="text" id="delivery-address" name="delivery-address"><br><br>
+        
+        <label for="delivery-city">City:</label>
+        <input type="text" id="delivery-city" name="delivery-city"><br><br>
+        
+        <label for="delivery-zip">Zip:</label>
+        <input type="text" id="delivery-zip" name="delivery-zip"><br><br>
+        
+        <label for="same-as-delivery">Same as Delivery Address:</label>
+        <input type="checkbox" id="same-as-delivery" name="same-as-delivery">
+        
+        <div id="billing-address-fields">
+		
+            <h2>Billing Address</h2>
+            <label for="billing-name">Name:</label>
+            <input type="text" id="billing-name" name="billing-name"><br><br>
+            
+            <label for="billing-address">Address:</label>
+            <input type="text" id="billing-address" name="billing-address"><br><br>
+            
+            <label for="billing-city">City:</label>
+            <input type="text" id="billing-city" name="billing-city"><br><br>
+            
+            <label for="billing-zip">Zip:</label>
+            <input type="text" id="billing-zip" name="billing-zip"><br><br>
+        </div>
+    </form>
+    
+            <div>
+                <label for="email-section">Email for Receipt:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+			    <!-- Payment method selection -->
+
+            <div>
+                <label for="payment-method">Payment Method:</label>
+                <label for="pay-on-pickup">Pay on Pickup</label>
+                <input type="radio" id="pay-on-pickup" name="payment-method" value="pickup" onclick="toggleCreditCardInfo()" required>
+                <label for="pay-online">Pay Online</label>
+				<input type="radio" id="pay-online" name="payment-method" value="online" onclick="toggleCreditCardInfo()" required>
+            </div>
+			<div id="credit-card-info" style="display: none;">
+				<label for="card-type">Card Type:</label>
+				<select id="card-type" name="card-type" required>
+					<option value="" disabled selected>Select Card Type</option>
+					<option value="visa">Visa</option>
+					<option value="mastercard">MasterCard</option>
+					<option value="amex">American Express</option>
+    </select>
+    
+    <label for="card-number">Credit Card Number:</label>
+    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+    
+    <label for="expiry-date">Expiry Date:</label>
+    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+</div>
+            
+
+            <div>
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
+		</section>
+   </main>
+
+    <footer>
+        <p>&copy; 2026 Japandi Cafe. All rights reserved.</p>
+    </footer>
+	<script src="order.js"></script>
+</body>
+</html>
